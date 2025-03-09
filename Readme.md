@@ -32,8 +32,7 @@ https://vrchat.com/home/world/wrld_56dd50ea-9c0c-4d4b-a4a0-1cfba83fd6e2/info
 ![](Document/TabbyAssetsFolder.png)
 |||
 |-|-|
-|Docmentフォルダ|本書で参照しているフォルダです<br>触らんで大丈夫です|
-|Udonフォルダ|ギミック動作用のUdonです<br>触らんで大丈夫です|
+|Scriptフォルダ|ギミック動作用のUdonです<br>触らんで大丈夫です|
 |CameraPositionプレハブ |カメラ位置を増やしたい場合に追加するプレハブです<br>設定手順は後述します|
 |EventCameraSystem_MultiplePositionプレハブ|メインのギミックです<br>Sceneポン置きで使用できます<br>細かい設定手順は後述します|
 |||
