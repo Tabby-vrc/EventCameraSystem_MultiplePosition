@@ -610,6 +610,7 @@ GameObject:
   - component: {fileID: 7181858065272387248}
   - component: {fileID: 7478046353987983508}
   - component: {fileID: 7234200925233955171}
+  - component: {fileID: 862862909217163287}
   m_Layer: 0
   m_Name: OwnerDisplay
   m_TagString: Untagged
@@ -716,6 +717,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AllowFocusView: 1
+--- !u!65 &862862909217163287
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5756310985651464058}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 200, y: 110, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &6075190484650224260
 GameObject:
   m_ObjectHideFlags: 0
@@ -883,6 +905,7 @@ GameObject:
   - component: {fileID: 7955599665067663498}
   - component: {fileID: 6194846813714543779}
   - component: {fileID: 2945835981204636881}
+  - component: {fileID: 8279619868511665147}
   m_Layer: 0
   m_Name: ButtonCanvas
   m_TagString: Untagged
@@ -986,6 +1009,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AllowFocusView: 1
+--- !u!65 &8279619868511665147
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7877541588084863403}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 320, y: 50, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &8767330843469535442
 GameObject:
   m_ObjectHideFlags: 0
@@ -1447,7 +1491,38 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 819829083627293978}
+    - targetCorrespondingSourceObject: {fileID: 6826482410028495778, guid: f50f5e3e5cbb58249bd81babea6fd31b,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5532386972502358136}
   m_SourcePrefab: {fileID: 100100000, guid: f50f5e3e5cbb58249bd81babea6fd31b, type: 3}
+--- !u!1 &8790706782163591076 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6826482410028495778, guid: f50f5e3e5cbb58249bd81babea6fd31b,
+    type: 3}
+  m_PrefabInstance: {fileID: 2828916610034117638}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &5532386972502358136
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8790706782163591076}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 320, y: 320, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &8790706782348580200 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6826482409954359662, guid: f50f5e3e5cbb58249bd81babea6fd31b,
@@ -1476,7 +1551,7 @@ MonoBehaviour:
     PrefabModifications: []
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 819829083627293978}
-  _ownerNameText: {fileID: 7243721174462675443}
+  ownerDisplay: {fileID: 0}
 --- !u!114 &819829083627293978
 MonoBehaviour:
   m_ObjectHideFlags: 0
