@@ -28,8 +28,12 @@ public class CameraPositionController : ButtonObserver
     [SerializeField]
     CameraPosition[] CameraPositions;
 
+    OwnerController ownerController;
+
     void Start()
     {
+        ownerController = CameraBase.GetComponent<OwnerController>();
+
         InitCameraPosition.SetObserver(this);
         InitCameraPosition.SetInitialPosition(CameraBase.transform);
         
@@ -57,11 +61,13 @@ public class CameraPositionController : ButtonObserver
 
     public override void ButtonClick(Transform moveDestination)
     {
+        ownerController.GetOwner();
         CameraBase.transform.position = moveDestination.position;
         CameraBase.transform.rotation = moveDestination.rotation;
     }
     public override void ButtonClick(Vector3 movePosition, Quaternion moveRotation)
     {
+        ownerController.GetOwner();
         CameraBase.transform.position = movePosition;
         CameraBase.transform.rotation = moveRotation;
     }
